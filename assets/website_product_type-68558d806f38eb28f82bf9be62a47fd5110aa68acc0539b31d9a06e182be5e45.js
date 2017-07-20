@@ -13923,6 +13923,8 @@ $(function () {
             $('#cover_modal').show();
             $.getJSON('/info/products/' + product_id + '.json', function (data) {
                 render_product_modal(data);
+                $('#product_modal').find('.modal-loading').hide();
+                $('#product_modal').find('.modal-content').show();
             })
         },
         afterOpen: function() {
@@ -13931,6 +13933,8 @@ $(function () {
             $('#cover_modal').hide();
         },
         afterClose: function() {
+            $('#product_modal').find('.modal-content').hide();
+            $('#product_modal').find('.modal-loading').show();
         }
     });
 

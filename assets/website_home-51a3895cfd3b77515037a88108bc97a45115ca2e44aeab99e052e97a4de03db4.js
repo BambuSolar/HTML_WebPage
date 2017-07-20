@@ -13901,6 +13901,9 @@ $(function () {
         homeBackgroundSize();
         bgResponsive();
     });
+
+    $('#contact').find('iframe').height($('#contact').find('.main_contact_info').height());
+
 });
 
 function homeBackgroundSize() {
