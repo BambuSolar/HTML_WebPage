@@ -13746,10 +13746,8 @@ if("undefined"==typeof jQuery)throw new Error("iziModal requires jQuery");(funct
 "use strict";
 jQuery(document).ready(function ($) {
 
-    $(window).on('load',function () {
-        $(".loaded").fadeOut();
-        $(".preloader").delay(1000).fadeOut("slow");
-    });
+    $(".loaded").fadeOut();
+    $(".preloader").delay(1000).fadeOut("slow");
 
 
 
